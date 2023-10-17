@@ -29,24 +29,22 @@ public class Main {
             System.out.println(i);
         }
         System.out.println("Задача 8");
-        int Deposit = 29000;
-        int  monthlyDeposit = 0;
+        int deposit = 29000;
+        int monthlyDeposit = 0;
         for (int month = 1; month <= 12; month++) {
-            monthlyDeposit = Deposit/12;
-            System.out.println("Месяц " + Deposit + "Сумма накоплений равна" + monthlyDeposit + "рублей");
+            monthlyDeposit = deposit + monthlyDeposit;
+            System.out.println("Месяц " + month + "Сумма накоплений равна" + monthlyDeposit + "рублей");
         }
         System.out.println("Задача 9");
+        for (int month = 1; month <= 12; month++) {
+            deposit += (deposit * 0.12) / 12;
 
+                System.out.println("Месяц " + month + "Сумма накоплений равна" + deposit + "рублей");
 
-        for (int i = 1; i < 12; i++) {
-            monthlyDeposit = Deposit/100;
-            monthlyDeposit = monthlyDeposit + Deposit;
-            System.out.println("Месяц " + Deposit + "Сумма накоплений равна" + monthlyDeposit + "рублей");
-
-    }
-        System.out.println("Задача 10");
-        for (int i = 1; i <= 10; i++) {
-            System.out.println("2 x " + i + " = " + 2 * i);
         }
-}
-}
+            System.out.println("Задача 10");
+            for (int i = 1; i <= 10; i++) {
+                System.out.println("2 x " + i + " = " + 2 * i);
+            }
+        }
+    }
